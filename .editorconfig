@@ -1,0 +1,131 @@
+# EditorConfig
+# https://editorconfig.org
+#
+# This file ensures consistent coding styles across different editors and IDEs.
+# Most editors support EditorConfig either natively or via plugins.
+
+root = true
+
+# -----------------------------------------------------------------------------
+# Default settings (applies to all files unless overridden)
+# -----------------------------------------------------------------------------
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# -----------------------------------------------------------------------------
+# Web frontend (Svelte, JavaScript, TypeScript, CSS)
+# -----------------------------------------------------------------------------
+[*.{svelte,js,jsx,ts,tsx,vue}]
+indent_style = space
+indent_size = 2
+
+[*.{css,scss,sass,less}]
+indent_style = space
+indent_size = 2
+
+[*.html]
+indent_style = space
+indent_size = 2
+
+# -----------------------------------------------------------------------------
+# Configuration files (JSON, YAML, TOML)
+# -----------------------------------------------------------------------------
+[*.{json,jsonc}]
+indent_style = space
+indent_size = 2
+
+[*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+[*.toml]
+indent_style = space
+indent_size = 2
+
+[*.{xml,svg}]
+indent_style = space
+indent_size = 2
+
+# -----------------------------------------------------------------------------
+# Markdown & Documentation
+# -----------------------------------------------------------------------------
+[*.{md,mdx}]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+trim_trailing_whitespace = false  # Preserve line-ending spaces in Markdown
+insert_final_newline = true
+
+# -----------------------------------------------------------------------------
+# Shell & Scripts
+# -----------------------------------------------------------------------------
+[*.{sh,bash}]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+
+# -----------------------------------------------------------------------------
+# Python (if needed for tooling/scripts)
+# -----------------------------------------------------------------------------
+[*.py]
+indent_style = space
+indent_size = 4
+max_line_length = 88
+
+# -----------------------------------------------------------------------------
+# Build & Config files
+# -----------------------------------------------------------------------------
+[{Makefile,*.mk,*.mak}]
+indent_style = tab
+
+# .gitignore, .env, etc.
+[*.gitignore]
+indent_style = space
+indent_size = 2
+
+[*.env*]
+indent_style = space
+indent_size = 2
+
+# -----------------------------------------------------------------------------
+# Firebase specific
+# -----------------------------------------------------------------------------
+[firestore.rules]
+indent_style = space
+indent_size = 2
+
+[firebase.json]
+indent_style = space
+indent_size = 2
+
+# -----------------------------------------------------------------------------
+# Package managers
+# -----------------------------------------------------------------------------
+[package.json]
+indent_style = space
+indent_size = 2
+
+[pnpm-lock.yaml]
+indent_style = space
+indent_size = 2
+
+# -----------------------------------------------------------------------------
+# CI/CD configuration
+# -----------------------------------------------------------------------------
+[.github/**/*.{yml,yaml}]
+indent_style = space
+indent_size = 2
+
+# -----------------------------------------------------------------------------
+# Documentation files (preserve formatting)
+# -----------------------------------------------------------------------------
+[*.{txt,lock}]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
