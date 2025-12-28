@@ -26,17 +26,17 @@ topic-name/
 
 ## Example Contents
 
-| Folder | Description |
-|--------|-------------|
+| Folder             | Description                                         |
+| ------------------ | --------------------------------------------------- |
 | `sparkboard-chat/` | Example: SvelteKit + Firebase project documentation |
 
 ## Files
 
-| File | Purpose |
-|------|---------|
-| `.gitignore` | Excludes temp workspaces and sensitive files |
-| `.editorconfig` | Editor consistency settings |
-| `AGENT.md` | Custom instructions for Claude (optional) |
+| File            | Purpose                                      |
+| --------------- | -------------------------------------------- |
+| `.gitignore`    | Excludes temp workspaces and sensitive files |
+| `.editorconfig` | Editor consistency settings                  |
+| `AGENT.md`      | Custom instructions for Claude (optional)    |
 
 ---
 
